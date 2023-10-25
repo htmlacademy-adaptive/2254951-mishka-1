@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__container">
+        <a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-d.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-t.svg">
+            <img class="main-header__logo-img" src="img/mishka-logo-m.svg" alt="Лого Mishka">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
+          <span class="main-nav__toggle-item"></span>
+          <span class="main-nav__toggle-close"></span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user-list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="header-catalog">
+        <h1 class="header-catalog__title">Каталог товаров</h1>
+      </section>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="product">
+            <a class="product__img" href="product.html" aria-label="Вязаная игрушка в виде зайца">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-bunny-d.webp, img/product-bunny-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-bunny-t.webp, img/product-bunny-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-bunny-m.webp, img/product-bunny-m@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/product-bunny-d.png, img/product-bunny-d@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/product-bunny-t.png, img/product-bunny-t@2x.png 2x">
+                <img src="img/product-bunny-m.png" srcset="img/product-bunny-m@2x.png 2x">
+              </picture>
+            </a>
+            <div class="product__wrapper">
+              <h2 class="product__title">Зайчик-попрыгайчик</h2>
+              <p class="product__features">Рост 30 см, вес 200 г</p>
+              <span class="product__price">1 200 руб.</span>
+            </div>
+          </li>
+          <li class="product">
+            <a class="product__img" href="product.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-basket-d.webp, img/product-basket-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-basket-t.webp, img/product-basket-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-basket-m.webp, img/product-basket-m@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/product-basket-d.png, img/product-basket-d@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/product-basket-t.png, img/product-basket-t@2x.png 2x">
+                <img src="img/product-basket-m.png" srcset="img/product-basket-m@2x.png 2x">
+              </picture>
+            </a>
+            <div class="product__wrapper">
+              <h2 class="product__title">Корзинка для белья</h2>
+              <p class="product__features">Диаметр 15 см, высота 10 см</p>
+              <span class="product__price">690 руб.</span>
+            </div>
+          </li>
+          <li class="product">
+            <a class="product__img" href="product.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-toy-basket-d.webp, img/product-toy-basket-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/product-toy-basket-t.webp, img/product-toy-basket-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-toy-basket-m.webp, img/product-toy-basket-m@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/product-toy-basket-d.png, img/product-toy-basket-d@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/product-toy-basket-t.png, img/product-toy-basket-t@2x.png 2x">
+                <img src="img/product-toy-basket-m.png" srcset="img/product-toy-basket-m@2x.png 2x">
+              </picture>
+            </a>
+            <div class="product__wrapper">
+              <h2 class="product__title">Большая корзинка для игрушек</h2>
+              <p class="product__features">Диаметр 30 см, высота 30 см</p>
+              <span class="product__price">1 500 руб.</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="show-process">
+        <h3 class="show-process__title">Процесс производства</h3>
+        <div class="show-process__video-wrapper">
+          <picture>
+            <img src="img/video-bg-m.jpg" srcset="img/video-bg-m@2x.jpg">
+          </picture>
+          <button class="show-process__play-btn">
+            <span class="visually-hidden">Нажать для просмотра</span>
+          </button>
+        </div>
+        <div class="show-process__description">
+          <p class="show-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="show-process__btn button button--light">Сделать заказ</button>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__logo">
+        <svg class="main-footer__svg" width="102" height="34">
+          <use xlink:href="img/sprite.svg#logo-footer-t"></use>
+        </svg>
+      </a>
+      <ul class="main-footer__social">
+        <li class="main-footer__social-item">
+       <a class="main-footer__social-link" href="https://vk.com/htmlacademy" aria-label="HTML Академия в Вконтакте">
+        <svg class="main-footer__social-svg" width="28" height="22">
+          <use xlink:href="img/sprite.svg#vkontakte"></use>
+        </svg>
+       </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="https://www.youtube.com/htmlacademyrus" aria-label="HTML Академия на Ютуб">
+            <svg class="main-footer__social-svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="https://t.me/htmlacademy" aria-label="HTML Академия в Телеграме">
+            <svg class="main-footer__social-svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="htmlacademy-logo">
+        <span class="htmlacademy-logo__text">Разработано</span>
+        <svg class="htmlacademy-logo__svg" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </footer>
+  </body>
+</html>
