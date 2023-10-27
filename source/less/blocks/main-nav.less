@@ -1,0 +1,127 @@
+.main-nav {
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.main-nav__item--user {
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.main-nav__item--search {
+  @media (min-width: @tablet-width) {
+    padding: 36px 31px 27px 33px;
+  }
+}
+
+.main-nav__item--cart {
+  @media (min-width: @tablet-width) {
+    padding: 33px 0 30px 31px;
+  }
+}
+
+.main-nav__item--text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    color: #444;
+    font-size: 15px;
+    line-height: 24px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+  }
+}
+
+.main-nav__list {
+  .list-reset;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: flex;
+  }
+}
+
+.main-nav__list--user-list {
+  @media (min-width: @tablet-width) {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.main-nav__list--page-list {
+  @media (min-width: @tablet-width) {
+    bottom: -45px;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    bottom: 0;
+    gap: 71px;
+  }
+}
+
+.main-nav__link {
+  .text-underline;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
+}
+
+.main-nav__link--user {
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    gap: 31px;
+    display: flex;
+  }
+}
+
+.main-nav__link--user span {
+  @media (min-width: @desktop-width) {
+    padding-right: 2px;
+    padding-bottom: 1px;
+  }
+}
+
+.main-nav__toggle {
+  background-color: #fff;
+  position: absolute;
+  padding: 4px 0;
+  border: 0;
+  cursor: pointer;
+  right: 25px;
+  top: -49px;
+  display: none;
+}
+
+.main-nav__toggle-item {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+}

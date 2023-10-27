@@ -1,0 +1,31 @@
+.header-catalog {
+  padding: 73px 30px 74px;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 101px 50px 75px;
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 101px 150px 113px;
+    margin-bottom: 111px;
+  }
+}
+
+.header-catalog::after {
+  @media (min-width: @tablet-width) {
+    .zigzag-light;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: auto 36px;
+    height: 34px;
+    top: 41%;
+  }
+}
+
+.header-catalog__title {
+  .header-title;
+}
