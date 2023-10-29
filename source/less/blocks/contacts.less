@@ -1,0 +1,73 @@
+.contacts {
+  padding: 39px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 69px;
+    padding-bottom: 57px;
+  }
+}
+
+.contacts__title {
+  .title;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+    position: relative;
+  }
+}
+
+.contacts__title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    background: url("../img/flag.svg") no-repeat 0 0;
+    width: 47px;
+    height: 81px;
+    top: -23px;
+    right: 3px;
+  }
+}
+
+.contacts__wrapper {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 63px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    gap: unset;
+    margin-bottom: 48px;
+  }
+}
+
+.contacts__container {
+  line-height: 30px;
+  color: #444444;
+  display: grid;
+  grid-template-columns: 77px 1fr;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    width: 50%;
+  }
+}
+
+.contacts__content--underline {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    bottom: 0;
+  }
+}
+
+.contacts__content--underline::after {
+  content: "";
+  position: absolute;
+  width: 79%;
+  height: 1px;
+  background: #62d1ba;
+  bottom: 60px;
+  left: 1px;
+}

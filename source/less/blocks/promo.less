@@ -1,0 +1,156 @@
+.promo {
+  position: relative;
+  margin-top: 31px;
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 51px;
+    margin-bottom: 70px;
+  }
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  background: url(../img/zigzag-line.svg)0 0;
+  z-index: 1;
+  width: 100%;
+  height: 6px;
+  bottom: -42px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    bottom: -64px;
+  }
+}
+
+.promo__header {
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+  }
+}
+
+.promo__title {
+  .title;
+  margin-bottom: 4px;
+}
+
+.promo__span {
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 126px;
+    line-height: 17px;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+}
+
+.promo__text {
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 39px;
+  }
+}
+
+.promo__features {
+  color: #444444;
+  font-size: 15px;
+  line-height: 12px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.promo__features-row {
+  border-bottom: 1px solid #ececec;
+  display: grid;
+  grid-template-columns: 97px 1fr;
+  padding: 12px 0 16px;
+}
+
+.promo__features-name,
+.promo__features-value {
+  padding: 0;
+}
+
+.promo__price {
+  color: #444444;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.promo__btn {
+  font-size: 18px;
+  line-height: 20px;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    width: 100%;
+  }
+}
+
+.promo__info {
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    width: 292px;
+    margin-bottom: 56px;
+  }
+}
+
+.promo__price {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.promo__img-wrapper {
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    position: absolute;
+    width: 334px;
+    height: 404px;
+    top: 100px;
+    right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: unset;
+    height: 636px;
+    top: 19px;
+  }
+}
+
+.promo__order-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 292px;
+  }
+}
