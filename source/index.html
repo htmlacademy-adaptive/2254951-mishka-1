@@ -70,7 +70,7 @@
     </header>
     <main>
       <section class="promo">
-       <div class="wrapper">
+       <div class="wrapper promo__wrapper">
         <div class="promo__header">
           <h2 class="promo__title">Вязаные корзинки</h2>
           <span class="promo__span">Товар недели</span>
@@ -111,18 +111,20 @@
        </div>
       </section>
       <section class="about wrapper">
-        <h3 class="about__title">Коротко о нас:</h3>
-        <ul class="about__list">
-          <li class="about__item about__item--eco">Экологически чистые&nbsp;материалы</li>
-          <li class="about__item about__item--style">Скандинавский стиль по&nbsp;российской цене</li>
-          <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="about__item about__item--handmade">Связано вручную<br>с любовью и умилением</li>
-          <li class="about__item about__item--native">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--gift">Поставляется<br>в подарочной упаковке</li>
-        </ul>
+        <div class="about__wrapper">
+          <h3 class="about__title">Коротко о нас:</h3>
+          <ul class="about__list">
+            <li class="about__item about__item--eco">Экологически чистые&nbsp;материалы</li>
+            <li class="about__item about__item--style">Скандинавский стиль по&nbsp;российской цене</li>
+            <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+            <li class="about__item about__item--handmade">Связано вручную<br>с любовью и умилением</li>
+            <li class="about__item about__item--native">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--gift">Поставляется<br>в подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
       <section class="reviews">
-        <div class="wrapper">
+        <div class="wrapper reviews__wrapper">
           <h3 class="reviews__title">Отзывы</h3>
           <blockquote class="reviews__content">
             <p class="reviews__text">
@@ -149,24 +151,26 @@
         </div>
       </section>
       <div class="contacts">
-        <section class="contacts__section wrapper">
-          <h3 class="contacts__title">Контакты</h3>
-          <div class="contacts__wrapper">
-            <div class="contacts__container">
-              <span class="contacts__type">e-mail:</span>
-              <span class="contacts__content--underline">info@mimimishkashop.ru</span>
+        <div class="contacts__block">
+          <section class="contacts__section">
+            <h3 class="contacts__title">Контакты</h3>
+            <div class="contacts__wrapper">
+              <div class="contacts__container">
+                <span class="contacts__type">e-mail:</span>
+                <span class="contacts__content--underline">info@mimimishkashop.ru</span>
+              </div>
+              <div class="contacts__container">
+                <span class="contacts__type">адрес:</span>
+                <span class="contacts__content">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</span>
+              </div>
             </div>
-            <div class="contacts__container">
-              <span class="contacts__type">адрес:</span>
-              <span class="contacts__content">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</span>
-            </div>
-          </div>
-        </section>
-        <section class="map">
-          <span class="visually-hidden">Где мы находимся:</span>
-          <div class="map__wrapper"></div>
-        </section>
-        <button class="map__btn button button--light" type="button">Напишите нам</button>
+          </section>
+          <section class="map">
+            <span class="visually-hidden">Где мы находимся:</span>
+            <div class="map__wrapper"></div>
+          </section>
+        </div>
+        <button class="contacts__btn button button--light" type="button">Напишите нам</button>
       </div>
     </main>
     <footer class="main-footer">
