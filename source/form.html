@@ -55,7 +55,96 @@
       </section>
     </header>
     <main>
-      <section class=""></section>
+      <div class="main-header wrapper">
+        <h2 class="visually-hidden">Заполните форму заказа</h2>
+        <p class="header-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+      <form class="form">
+        <div class="form__wrapper wrapper">
+          <h3 class="form__title">Тип</h3>
+          <ul class="form__radio radio">
+            <li class="radio__item">
+              <input class="radio__input visually-hidden" type="radio" checked>
+              <label class="radio__label">Аксессуар для интерьера</label>
+            </li>
+            <li class="radio__item">
+              <input class="radio__input visually-hidden" type="radio">
+              <label class="radio__label">Детская игрушка</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__bg">
+          <div class="wrapper form__wrapper">
+            <h3 class="form__title">Цвет</h3>
+            <ul class="form__checkbox checkbox">
+              <li class="checkbox__item">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <label class="checkbox__label">Белый</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input visually-hidden" type="checkbox" checked>
+                <label class="checkbox__label">Серый</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input visually-hidden" type="checkbox">
+                <label class="checkbox__label">Тиффани</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input visually-hidden" type="checkbox">
+                <label class="checkbox__label">Черный</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input visually-hidden" type="checkbox">
+                <label class="checkbox__label">Розовый</label>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input visually-hidden" type="checkbox">
+                <label class="checkbox__label">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__wrapper wrapper">
+          <h3 class="form__title">ФИО</h3>
+          <ul class="form__name">
+            <li class="form__item form__item--name">
+              <label class="form__name-label">Имя:</label>
+              <input class="form__input" type="text" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="form__item form__item--name">
+              <label class="form__name-label">Фамилия:</label>
+              <input class="form__input" type="text" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="form__item form__item--name">
+              <label class="form__name-label">Отчество:</label>
+              <input class="form__input" type="text" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </div>
+        <div class="form__bg">
+          <div class="wrapper">
+            <h3 class="visually-hidden">Способ связи</h3>
+            <ul class="form__contacts">
+              <li class="form__item form__item--contacts">
+                <label class="form__title">Тел</label>
+                <input class="form__input form__input--contacts" type="text" placeholder="+7 XXX XXX XX XX*" required>
+              </li>
+              <li class="form__item form__item--contacts">
+                <label class="form__title">e-mail</label>
+                <input class="form__input form__input--contacts" type="email" placeholder="Ваш Email*" required>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__wrapper wrapper">
+          <h3 class="form__title">Доп</h3>
+          <textarea class="form__message" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+        </div>
+        <div class="form__footer wrapper">
+          <small class="form__footer-text">*Поля обязательны для заполнения</small>
+          <button class="form__btn button button--light" type="submit">Отправить заказ</button>
+        </div>
+      </form>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper wrapper">

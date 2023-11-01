@@ -1,0 +1,27 @@
+.checkbox__label {
+  .label;
+  position: relative;
+  padding: 11px 0 10px 61px;
+}
+
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.checkbox__item {
+  min-height: 38px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 22px;
+}
