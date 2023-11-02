@@ -8,53 +8,59 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__container">
-        <a class="main-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/mishka-logo-d.svg">
-            <source media="(min-width: 768px)" srcset="img/mishka-logo-t.svg">
-            <img class="main-header__logo-img" src="img/mishka-logo-m.svg" alt="Лого Mishka">
-          </picture>
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
-            <span class="main-nav__toggle-item"></span>
-            <span class="main-nav__toggle-close"></span>
-          </button>
-          <ul class="main-nav__list main-nav__list--page-list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+      <nav class="main-header__nav main-nav">
+        <div class="main-header__container">
+          <div class="main-nav__logo">
+            <a class="main-nav__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/mishka-logo-d.svg">
+                <source media="(min-width: 768px)" srcset="img/mishka-logo-t.svg">
+                <img class="main-nav__logo-img" src="img/mishka-logo-m.svg" alt="Лого Mishka">
+              </picture>
+            </a>
+          </div>
+          <ul class="main-nav__list main-nav__list--page">
+            <li class="main-nav__item main-nav__item--page">
+              <a class="main-nav__link main-nav__link--page" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item main-nav__item--page">
+              <a class="main-nav__link main-nav__link--page" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item main-nav__item--desktop">
+              <a class="main-nav__link main-nav__link--desktop" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--desktop">
+              <a class="main-nav__link main-nav__link--desktop" href="#">Распродажа</a>
             </li>
           </ul>
-          <ul class="main-nav__list main-nav__list--user-list">
+          <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item main-nav__item--user main-nav__item--search">
-              <a class="main-nav__link" href="#">
-                <span class="visually-hidden">Поиск по сайту</span>
-                <svg class="main-nav__link-svg" width="18" height="18">
+              <a class="main-nav__link main-nav__link--search" href="#">
+                <svg class="main-nav__icon" width="18" height="18">
                   <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
+                <span class="main-nav__span">Поиск по сайту</span>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--user main-nav__item--cart">
-              <a class="main-nav__link main-nav__link--user" href="#">
-                <svg class="main-nav__link-svg" width="21" height="18">
+            <li class="main-nav__item main-nav__item--user">
+              <a class="main-nav__link main-nav__link--cart" href="#">
+                <svg class="main-nav__icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#cart"></use>
                 </svg>
                 <span>Корзина: пока пуста</span>
               </a>
             </li>
+            <li class="main-nav__item main-nav__item--delivery">
+              Бесплатная доставка по России
+            </li>
           </ul>
-          <p class="main-nav__item main-nav__item--text">Бесплатная доставка по России</p>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </header>
+    <main>
       <section class="header-catalog">
         <h1 class="header-catalog__title">Каталог товаров</h1>
       </section>
-    </header>
-    <main>
       <section class="catalog wrapper">
         <ul class="catalog__list">
           <li class="product">

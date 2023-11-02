@@ -1,88 +1,135 @@
-.main-nav {
+.main-nav__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ececec;
+
   @media (min-width: @tablet-width) {
-    width: 668px;
-    margin: 0 auto;
-    display: flex;
+    height: 88px;
+    justify-content: unset;
+    padding: 0;
+    border: none;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
   }
 }
 
-.main-nav__item--user {
+.main-nav__logo-link {
   @media (min-width: @tablet-width) {
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    width: 113px;
+    height: 46px;
+    padding-top: 22px;
+    padding-bottom: 18px;
   }
-}
 
-.main-nav__item--search {
-  @media (min-width: @tablet-width) {
-    padding: 36px 31px 27px 33px;
-  }
-}
-
-.main-nav__item--cart {
-  @media (min-width: @tablet-width) {
-    padding: 33px 0 30px 31px;
-  }
-}
-
-.main-nav__item--text {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    color: #444;
-    font-size: 15px;
-    line-height: 24px;
-    display: block;
-    margin: 0;
-    position: absolute;
-    bottom: -45px;
-    right: 0;
+  @media (min-width: @desktop-width) {
+    width: 149px;
+    height: 72px;
+    padding: 0;
   }
 }
 
 .main-nav__list {
   .list-reset;
 
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
-    position: absolute;
     display: flex;
   }
 }
 
-.main-nav__list--user-list {
+.main-nav__list--page {
   @media (min-width: @tablet-width) {
-    right: 0;
-    bottom: 0;
-  }
-}
-
-.main-nav__list--page-list {
-  @media (min-width: @tablet-width) {
-    bottom: -45px;
+    order: 3;
+    width: 335px;
     flex-wrap: wrap;
-    gap: 36px;
   }
 
   @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.main-nav__list--user {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.main-nav__item {
+  padding: 28px 33px 26px 76px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 0 26px 83px;
+    border-bottom: none;
+  }
+}
+
+.main-nav__item--search {
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    padding: 0;
+    width: 82px;
+    height: 88px;
+  }
+}
+
+.main-nav__item--page {
+  @media (min-width: @tablet-width) {
+    padding: 21px 0;
+  }
+}
+
+.main-nav__item--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav__item--delivery {
+  display: none;
+
+  @media (min-width: @tablet-width) {
     position: absolute;
-    top: 33px;
-    left: 0;
-    bottom: 0;
-    gap: 71px;
+    display: block;
+    bottom: -45px;
+    right: 0;
+    width: 231px;
+    padding: 0;
+    margin: 0;
+    color: #444444;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 
 .main-nav__link {
   .text-underline;
+  display: block;
   color: #000000;
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+}
 
+.main-nav__link--page {
   @media (min-width: @tablet-width) {
+    width: 167px;
     font-size: 15px;
   }
 
@@ -91,37 +138,25 @@
   }
 }
 
-.main-nav__link--user {
-  @media (min-width: @tablet-width) {
-    font-size: 17px;
-    gap: 31px;
-    display: flex;
-  }
-}
-
-.main-nav__link--user span {
+.main-nav__link--desktop {
   @media (min-width: @desktop-width) {
-    padding-right: 2px;
-    padding-bottom: 1px;
+    font-size: 15px;
   }
 }
 
-.main-nav__toggle {
-  background-color: #fff;
+.main-nav__icon {
   position: absolute;
-  padding: 4px 0;
-  border: 0;
-  cursor: pointer;
-  right: 25px;
-  top: -49px;
-  display: none;
+  top: 30px;
+  left: 31px;
+
+  @media (min-width: @tablet-width) {
+    top: 35px;
+    left: 32px;
+  }
 }
 
-.main-nav__toggle-item {
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  width: 24px;
-  height: 2px;
-  background-color: #000;
+.main-nav__span {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

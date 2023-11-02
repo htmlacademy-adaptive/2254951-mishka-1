@@ -1,14 +1,11 @@
 .promo {
-  margin-top: 31px;
-  margin-bottom: 36px;
+  padding-top: 31px;
+  padding-bottom: 41px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    margin-top: 51px;
-    margin-bottom: 70px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 131px;
+    padding-top: 40px;
+    padding-bottom: 70px;
   }
 }
 
@@ -17,18 +14,7 @@
 }
 
 .promo::after {
-  content: "";
-  position: absolute;
-  background: url(../img/zigzag-line.svg)0 0;
-  z-index: 1;
-  width: 100%;
-  height: 6px;
-  bottom: -42px;
-  left: 0;
-
-  @media (min-width: @tablet-width) {
-    bottom: -64px;
-  }
+  .zigzag-dark;
 }
 
 .promo__header {

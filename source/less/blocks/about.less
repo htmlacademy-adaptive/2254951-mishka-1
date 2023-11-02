@@ -1,5 +1,5 @@
 .about__wrapper {
-  padding-top: 37px;
+  padding-top: 32px;
 
   @media (min-width: @tablet-width) {
     padding-top: 55px;
@@ -23,21 +23,6 @@
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
-
-    /* Эти два варианта работают, но переполнение неправильное (не как при обычном display: flex; flex-wrap: wrap;)
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,min-content);
-    grid-auto-flow: column;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 668px;
-    height: 369px;
-
-    */
   }
 
   @media (min-width: @desktop-width) {
