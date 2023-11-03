@@ -7,7 +7,31 @@
 .form__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    gap: 82px;
+    gap: 79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 28px;
+  }
+}
+
+.form__wrapper--message {
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 53px;
+    gap: 111px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 26px;
+    padding-bottom: 49px;
+  }
+}
+
+.form__wrapper--name,
+.form__wrapper--contacts {
+  @media (min-width: @desktop-width) {
+    padding-left: 111px;
   }
 }
 
@@ -20,8 +44,35 @@
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
-    padding: 51px 0;
     width: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 0 0 61px;
+  }
+}
+
+.form__title--color {
+  @media (min-width: @tablet-width) {
+    padding-top: 68px;
+  }
+}
+
+.form__title--name {
+  @media (min-width: @tablet-width) {
+    padding: 68px 0;
+  }
+}
+
+.form__title--contacts {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.form__title--message {
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
   }
 }
 
@@ -36,18 +87,47 @@
     padding: 38px 0 57px;
     gap: 37px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 38px 0 56px;
+  }
 }
 
 .form__checkbox {
   .list-reset;
   padding-top: 25px;
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 498px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 56px;
+    padding-bottom: 21px;
+    column-gap: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 85%;
+    padding-top: 57px;
+    padding-bottom: 19px;
+  }
 }
 
 .form__name {
   .list-reset;
   padding-top: 28px;
   padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+    padding-top: 49px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 698px;
+  }
 }
 
 .form__item {
@@ -57,6 +137,12 @@
 .form__item--name {
   flex-direction: column;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+  }
 }
 
 .form__item--contacts {
@@ -65,6 +151,13 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 103px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 26px;
   }
 }
 
@@ -72,25 +165,46 @@
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
-  padding: 17px 0 15px;
+  padding: 0;
+  height: 50px;
   border: none;
   border-bottom: 2px solid #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    width: 100%;
+    padding-left: 19px;
+  }
 }
 
 .form__input--contacts {
-  padding: 19px 0 18px;
+  padding: 5px 0 0px;
 
   @media (min-width: @tablet-width) {
     background: #f1f1f1;
+    padding: 1px 0 1px 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 683px;
   }
 }
 
 .form__name-label {
   .label;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 24px 18px 0;
+  }
 }
 
 .form__contacts {
   .list-reset;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 25px;
+  }
 }
 
 .form__message {
@@ -100,11 +214,28 @@
   line-height: 18px;
   margin: 23px 0 11px;
   border: 2px solid #444444;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 19px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 627px;
+  }
 }
 
 .form__footer-text {
   color: #444444;
   font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 11px;
+  }
 }
 
 .form__btn {
@@ -113,8 +244,24 @@
   font-size: 17px;
   line-height: 16px;
   width: 260px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 230px;
+  }
 }
 
 .form__footer {
   padding-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
 }

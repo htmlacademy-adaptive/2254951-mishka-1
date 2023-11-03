@@ -8,10 +8,17 @@
     position: relative;
     margin-bottom: 7px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 38px 30px 103px;
+    margin-bottom: 62px;
+  }
 }
 
 .header-form::after {
-  .zigzag-light;
+  @media (min-width: @tablet-width) {
+    .zigzag-light;
+  }
 }
 
 .header-form__title {
@@ -30,5 +37,10 @@
     font-size: 17px;
     line-height: 30px;
     padding-top: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 702px;
+    margin: 0 auto;
   }
 }

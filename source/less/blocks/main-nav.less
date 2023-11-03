@@ -15,6 +15,7 @@
 
   @media (min-width: @desktop-width) {
     order: 2;
+    align-items: center;
   }
 }
 
@@ -35,6 +36,7 @@
 
 .main-nav__list {
   .list-reset;
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -50,6 +52,8 @@
 
   @media (min-width: @desktop-width) {
     order: 1;
+    width: 404px;
+    column-gap: 36px;
   }
 }
 
@@ -61,6 +65,8 @@
 
   @media (min-width: @desktop-width) {
     order: 3;
+    padding-left: 56px;
+    height: 88px;
   }
 }
 
@@ -89,6 +95,11 @@
   @media (min-width: @tablet-width) {
     padding: 21px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 33px 0 31px;
+    width: 184px;
+  }
 }
 
 .main-nav__item--desktop {
@@ -96,6 +107,8 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    padding: 20px 0;
+    width: 184px;
   }
 }
 

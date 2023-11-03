@@ -57,7 +57,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <section class="header-form">
         <h1 class="header-form__title">Вязание на заказ</h1>
@@ -67,7 +66,7 @@
         <p class="header-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="form">
-        <div class="form__wrapper wrapper">
+        <div class="form__wrapper wrapper form__wrapper--type">
           <h3 class="form__title">Тип</h3>
           <ul class="form__radio radio">
             <li class="radio__item">
@@ -81,8 +80,8 @@
           </ul>
         </div>
         <div class="form__bg">
-          <div class="wrapper form__wrapper">
-            <h3 class="form__title">Цвет</h3>
+          <div class="wrapper form__wrapper form__wrapper--color">
+            <h3 class="form__title form__title--color">Цвет</h3>
             <ul class="form__checkbox checkbox">
               <li class="checkbox__item">
                 <input class="checkbox__input visually-hidden" type="checkbox" checked>
@@ -111,8 +110,8 @@
             </ul>
           </div>
         </div>
-        <div class="form__wrapper wrapper">
-          <h3 class="form__title">ФИО</h3>
+        <div class="form__wrapper wrapper form__wrapper--name">
+          <h3 class="form__title form__title--name">ФИО</h3>
           <ul class="form__name">
             <li class="form__item form__item--name">
               <label class="form__name-label">Имя:</label>
@@ -129,22 +128,22 @@
           </ul>
         </div>
         <div class="form__bg">
-          <div class="wrapper">
+          <div class="wrapper form__wrapper--contacts">
             <h3 class="visually-hidden">Способ связи</h3>
             <ul class="form__contacts">
               <li class="form__item form__item--contacts">
-                <label class="form__title">Тел</label>
+                <label class="form__title form__title--contacts">Тел</label>
                 <input class="form__input form__input--contacts" type="text" placeholder="+7 XXX XXX XX XX*" required>
               </li>
               <li class="form__item form__item--contacts">
-                <label class="form__title">e-mail</label>
+                <label class="form__title form__title--contacts">e-mail</label>
                 <input class="form__input form__input--contacts" type="email" placeholder="Ваш Email*" required>
               </li>
             </ul>
           </div>
         </div>
-        <div class="form__wrapper wrapper">
-          <h3 class="form__title">Доп</h3>
+        <div class="form__wrapper wrapper form__wrapper--message">
+          <h3 class="form__title form__title--message">Доп</h3>
           <textarea class="form__message" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
         </div>
         <div class="form__footer wrapper">
