@@ -1,5 +1,6 @@
 .about__wrapper {
   padding-top: 32px;
+  padding-bottom: 57px;
 
   @media (min-width: @tablet-width) {
     padding-top: 55px;
@@ -7,7 +8,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 93px 0 61px 175px;
+    padding: 67px 0 61px 175px;
+  }
+}
+
+.about__list-container {
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }
 
@@ -16,17 +23,13 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 57px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 676px;
+    flex-direction: column;
   }
 }
 
@@ -47,9 +50,13 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 334px;
     line-height: 22px;
     padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
   }
 }
 

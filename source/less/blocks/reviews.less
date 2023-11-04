@@ -3,10 +3,17 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 85px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 138px;
+  }
+}
+
+.reviews::after {
+  @media (min-width: @tablet-width) {
+    .zigzag-dark;
   }
 }
 
@@ -114,6 +121,7 @@
   font-size: 18px;
   line-height: 20px;
   width: 260px;
+  padding: 14px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;

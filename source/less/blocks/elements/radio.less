@@ -36,3 +36,28 @@
     left: -1px;
   }
 }
+
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+
+  @media (min-width: @tablet-width) {
+    top: 12px;
+    left: 19px;
+    width: 19px;
+    height: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 11px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+  }
+}

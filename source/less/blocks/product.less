@@ -10,6 +10,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 55px;
   }
 }
 
@@ -77,12 +78,21 @@
   }
 }
 
+.product__order {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
+}
+
+.product__to-cart {
+  padding-top: 24px;
+}
+
 .product__price {
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
   display: block;
-  border-top: 1px solid #ececec;
   padding-top: 23px;
 
   @media (min-width: @tablet-width) {
