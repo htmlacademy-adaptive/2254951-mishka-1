@@ -1,9 +1,9 @@
 .reviews {
+  position: relative;
   padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 85px;
-    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -12,9 +12,7 @@
 }
 
 .reviews::after {
-  @media (min-width: @tablet-width) {
-    .zigzag-dark;
-  }
+  .zigzag-dark;
 }
 
 .reviews__wrapper {
@@ -129,6 +127,7 @@
     top: 79px;
     right: 0;
     width: 175px;
+    z-index: 5;
   }
 }
 
@@ -137,6 +136,7 @@
   background: #fff;
   width: 50%;
   padding: 12px 41px 9px 37px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -157,5 +157,14 @@
     bottom: 9px;
     height: 35px;
     gap: 37px;
+    z-index: 5;
   }
+}
+// hover, active
+.reviews__btn-arrow:hover {
+  opacity: 0.6;
+}
+
+.reviews__btn-arrow:active {
+  opacity: 0.3;
 }

@@ -12,6 +12,7 @@
 }
 
 .main-footer__logo {
+  color: #000000;
   @media (max-width: @mobile-width-only) {
     display: none;
   }
@@ -40,4 +41,14 @@
   @media (min-width: @tablet-width) {
     padding: 0 0 4px 0px;
   }
+}
+// hover, active
+.main-footer__logo:hover,
+.main-footer__social-link:hover {
+  color: #46c1ae;
+}
+
+.main-footer__logo:active,
+.main-footer__social-link:active {
+  opacity: 0.3;
 }

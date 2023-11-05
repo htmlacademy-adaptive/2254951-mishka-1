@@ -107,22 +107,34 @@
   }
 }
 
-.contacts__content--underline {
+.contacts__content-link {
   position: relative;
+  width: 168px;
+  text-decoration: none;
+  color: #444444;
 
   @media (min-width: @tablet-width) {
     bottom: 0;
+    width: 205px;
   }
 }
 
-.contacts__content--underline::after {
+.contacts__content-link::after {
   content: "";
   position: absolute;
-  width: 79%;
+  width: 100%;
   height: 1px;
   background: #62d1ba;
-  bottom: 60px;
-  left: 1px;
+  bottom: 2px;
+
+  @media (min-width: @tablet-width) {
+    bottom: 60px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -5px;
+  }
 }
 
 .contacts__btn {
@@ -143,4 +155,16 @@
     bottom: 105px;
     left: 175px;
   }
+}
+// hover, active
+.contacts__content-link:hover {
+  color: #46c1ae;
+}
+
+.contacts__content-link:hover::after {
+  background: #46c1ae;
+}
+
+.contacts__content-link:active::after {
+  background: rgba(70, 193, 174, 0.1);
 }

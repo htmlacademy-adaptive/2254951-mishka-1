@@ -105,6 +105,7 @@
   height: 62px;
   top: 23px;
   right: 36px;
+  opacity: 0.8;
 
   @media (min-width: @tablet-width) {
     top: 30px;
@@ -120,9 +121,23 @@
   height: 60px;
   top: 21px;
   right: 27px;
+  opacity: 0.8;
 
   @media (min-width: @tablet-width) {
     top: 32px;
     right: 34px;
   }
+}
+//hover,active
+.header-index__link:hover::after {
+  opacity: 1;
+}
+
+.header-index__link:active::after {
+  opacity: 0.6;
+}
+
+.header-index__link:hover {
+  position: relative;
+  top: -5px;
 }
