@@ -2,6 +2,7 @@
   .label;
   position: relative;
   padding: 11px 0 10px 61px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding: 10px 0 11px 82px;
@@ -30,18 +31,24 @@
 }
 
 .checkbox__input:checked + .checkbox__label::after {
-  content: url("../img/checkbox-tick.svg");
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  background: url("../img/tick.svg") no-repeat 0 0;
+  width: 24px;
+  height: 17px;
+  top: 12px;
+  left: 7px;
 
   @media (min-width: @tablet-width) {
-    content: url("../img/checkbox-tick-t.svg");
-    top: -6px;
+    background: url("../img/tick-t.svg") no-repeat 0 0;
+    width: 32px;
+    height: 22px;
+    top: 10px;
+    left: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    top: -9px;
+    top: 7px;
   }
 }
 

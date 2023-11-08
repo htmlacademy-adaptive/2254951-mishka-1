@@ -9,7 +9,10 @@
   <body>
     <header class="main-header">
       <nav class="main-header__nav main-nav">
-        <div class="main-header__container">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть-закрыть меню</span>
+        </button>
+        <div class="main-nav__container">
           <div class="main-nav__logo">
             <a class="main-nav__logo-link" href="index.html">
               <picture>
@@ -70,12 +73,12 @@
           <h3 class="form__title form__title--type">Тип</h3>
           <ul class="form__radio radio">
             <li class="radio__item">
-              <input class="radio__input visually-hidden" type="radio" checked>
-              <label class="radio__label">Аксессуар для интерьера</label>
+              <input class="radio__input visually-hidden" type="radio" name="type" value="accessory" id="interior" checked>
+              <label class="radio__label" for="interior">Аксессуар для интерьера</label>
             </li>
             <li class="radio__item">
-              <input class="radio__input visually-hidden" type="radio">
-              <label class="radio__label">Детская игрушка</label>
+              <input class="radio__input visually-hidden" type="radio" name="type" value="toy" id="toy" >
+              <label class="radio__label" for="toy">Детская игрушка</label>
             </li>
           </ul>
         </div>
@@ -84,28 +87,28 @@
             <h3 class="form__title form__title--color">Цвет</h3>
             <ul class="form__checkbox checkbox">
               <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <label class="checkbox__label">Белый</label>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="white" id="white"  checked>
+                <label class="checkbox__label" for="white">Белый</label>
               </li>
               <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" checked>
-                <label class="checkbox__label">Серый</label>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="gray" id="gray"  checked>
+                <label class="checkbox__label" for="gray">Серый</label>
               </li>
               <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox">
-                <label class="checkbox__label">Тиффани</label>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="tiffany" id="tiffany">
+                <label class="checkbox__label" for="tiffany">Тиффани</label>
               </li>
               <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox">
-                <label class="checkbox__label">Черный</label>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="black" id="black">
+                <label class="checkbox__label" for="black">Черный</label>
               </li>
               <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox">
-                <label class="checkbox__label">Розовый</label>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="pink" id="pink">
+                <label class="checkbox__label" for="pink">Розовый</label>
               </li>
               <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox">
-                <label class="checkbox__label">Оранжевый</label>
+                <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="orange" id="orange">
+                <label class="checkbox__label" for="orange">Оранжевый</label>
               </li>
             </ul>
           </div>
@@ -114,16 +117,16 @@
           <h3 class="form__title form__title--name">ФИО</h3>
           <ul class="form__name">
             <li class="form__item form__item--name">
-              <label class="form__name-label">Имя:</label>
-              <input class="form__input" type="text" placeholder="Введите ваше имя*" required>
+              <label class="form__name-label" for="first">Имя:</label>
+              <input class="form__input" type="text" placeholder="Введите ваше имя*" name="first-name" id="first" required>
             </li>
             <li class="form__item form__item--name">
-              <label class="form__name-label">Фамилия:</label>
-              <input class="form__input" type="text" placeholder="Укажите фамилию*" required>
+              <label class="form__name-label" for="last">Фамилия:</label>
+              <input class="form__input" type="text" placeholder="Укажите фамилию*" name="last-name" id="last" required>
             </li>
             <li class="form__item form__item--name">
-              <label class="form__name-label">Отчество:</label>
-              <input class="form__input" type="text" placeholder="Отчество, если желаете">
+              <label class="form__name-label" for="father">Отчество:</label>
+              <input class="form__input" type="text" placeholder="Отчество, если желаете" name="father-name" id="father">
             </li>
           </ul>
         </div>
@@ -132,18 +135,24 @@
             <h3 class="visually-hidden">Способ связи</h3>
             <ul class="form__contacts">
               <li class="form__item form__item--contacts">
-                <label class="form__title form__title--contacts">Тел</label>
-                <input class="form__input form__input--phone" type="text" placeholder="+7 XXX XXX XX XX*" required>
+                <label class="form__title form__title--contacts" for="tel">Тел</label>
+                <input class="form__input form__input--phone" type="text" placeholder="+7 XXX XXX XX XX*" name="phone-number" id="tel" required>
+                <svg class="form__input-svg form__input-svg--phone" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
               </li>
               <li class="form__item form__item--contacts">
-                <label class="form__title form__title--contacts">e-mail</label>
-                <input class="form__input form__input--mail" type="email" placeholder="Ваш Email*" required>
+                <label class="form__title form__title--contacts" for="mail">e-mail</label>
+                <input class="form__input form__input--mail" type="email" placeholder="Ваш Email*" name="e-mail" id="mail" required>
+                <svg class="form__input-svg form__input-svg--mail" width="32" height="21">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
               </li>
             </ul>
           </div>
         </div>
         <div class="form__wrapper wrapper form__wrapper--message">
-          <h3 class="form__title form__title--message">Доп</h3>
+          <label class="form__title form__title--message" for="message">Доп</label>
           <textarea class="form__message" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
         </div>
         <div class="form__footer wrapper">
@@ -190,35 +199,6 @@
         </a>
       </div>
     </footer>
-    <!-- Modal window -->
-    <div id="modal" class="modal modal--opened">
-      <div class="modal__container">
-        <div class="modal__header">
-          <h2 class="modal__title">Добавить в корзину</h2>
-        </div>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="modal__form-fieldset">
-            <legend class="modal__form-legend">Выберите размер:</legend>
-            <div class="modal__sizes">
-              <div class="modal__size">
-                <input class="modal__input" type="radio" name="size" id="S" value="S" checked>
-                <label class="modal__label">S</label>
-              </div>
-              <div class="modal__size">
-                <input class="modal__input" type="radio" name="size" id="M" value="M">
-                <label class="modal__label">M</label>
-              </div>
-              <div class="modal__size">
-                <input class="modal__input" type="radio" name="size" id="L" value="L">
-                <label class="modal__label">L</label>
-              </div>
-            </div>
-          </fieldset>
-          <button class="modal__add-btn button button--dark">Добавить</button>
-        </form>
-      </div>
-    </div>
-    <div class="modal__backdrop modal__backdrop--hidden" id="modal-backdrop"></div>
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

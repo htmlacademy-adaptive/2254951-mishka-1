@@ -9,7 +9,10 @@
   <body>
     <header class="main-header">
       <nav class="main-header__nav main-nav">
-        <div class="main-header__container">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть-закрыть меню</span>
+        </button>
+        <div class="main-nav__container">
           <div class="main-nav__logo">
             <a class="main-nav__logo-link" href="index.html">
               <picture>
@@ -205,7 +208,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div id="modal" class="modal modal--opened">
+    <div id="modal" class="modal modal--closed">
       <div class="modal__container">
         <div class="modal__header">
           <h2 class="modal__title">Добавить в корзину</h2>
@@ -215,16 +218,16 @@
             <legend class="modal__form-legend">Выберите размер:</legend>
             <div class="modal__sizes">
               <div class="modal__size">
-                <input class="modal__input" type="radio" name="size" id="S" value="S" checked>
-                <label class="modal__label">S</label>
+                <input class="modal__input visually-hidden" type="radio" name="size" id="s" value="small" checked>
+                <label class="modal__label" for="s">S</label>
               </div>
               <div class="modal__size">
-                <input class="modal__input" type="radio" name="size" id="M" value="M">
-                <label class="modal__label">M</label>
+                <input class="modal__input visually-hidden" type="radio" name="size" id="m" value="middle">
+                <label class="modal__label" for="m">M</label>
               </div>
               <div class="modal__size">
-                <input class="modal__input" type="radio" name="size" id="L" value="L">
-                <label class="modal__label">L</label>
+                <input class="modal__input visually-hidden" type="radio" name="size" id="l" value="large">
+                <label class="modal__label" for="l">L</label>
               </div>
             </div>
           </fieldset>
@@ -232,7 +235,6 @@
         </form>
       </div>
     </div>
-    <div class="modal__backdrop hidden" id="modal-backdrop"></div>
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
