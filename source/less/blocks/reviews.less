@@ -23,7 +23,14 @@
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
-    background: url("../img/review-bg-t.jpg") no-repeat 0 0;
+    background-image: image-set(
+      url("../img/review-bg-t.webp") type("image/webp") 1x,
+      url("../img/review-bg-t@2x.webp") type("image/webp") 2x,
+      url("../img/review-bg-t.jpg") type("image/jpg") 1x,
+      url("../img/review-bg-t@2x.jpg") type("image/jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: 0 0;
     width: 350px;
     height: 457px;
     top: 0;
