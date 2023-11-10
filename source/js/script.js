@@ -1,13 +1,12 @@
 const modalForm = document.querySelector('.modal__form');
 const promoBtn = document.querySelector('.promo__btn');
 const modal = document.querySelector('.modal');
+const toggleButton = document.querySelector('.main-nav__toggle');
 const mainNav = document.querySelector('.main-nav');
-const menuToggleButton = document.querySelector('.main-nav__toggle');
 const cartButton = document.querySelectorAll('.product__to-cart');
 
 mainNav.classList.add('main-nav--js');
 mainNav.classList.add('main-nav--closed');
-
 
 if (cartButton) {
     cartButton.forEach((item) => {
@@ -33,8 +32,6 @@ if (promoBtn) {
     })
 }
 
-if(menuToggleButton) {
-    menuToggleButton.addEventListener('click', () => {
-        mainNav.classList.toggle('main-nav--closed');
-    })
-}
+toggleButton.addEventListener('click', () => {
+  mainNav.classList.toggle('main-nav--closed');
+});

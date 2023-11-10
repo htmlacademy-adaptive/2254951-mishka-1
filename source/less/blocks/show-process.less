@@ -10,7 +10,7 @@
 
 .show-process__wrapper {
   border: 1px solid #ececec;
-  padding: 22px 0 33px;
+  padding: 20px 0 33px;
   margin-bottom: 57px;
 
   @media (min-width: @tablet-width) {
@@ -75,28 +75,35 @@
 }
 
 .show-process__video-wrapper {
-  height: 150px;
+  height: auto;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+  font-size: 0;
+  line-height: 0;
 
   @media (min-width: @tablet-width) {
     height: 455px;
     position: absolute;
-    bottom: 288px;
     margin-bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: max-content;
+    top: -79%;
   }
 
   @media (min-width: @desktop-width) {
     bottom: -1px;
     left: -187%;
+    transform: unset;
+    top: unset;
   }
 }
 
 .show-process__play-btn {
   position: absolute;
-  top: 37px;
-  right: 79px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   width: 101px;
   height: 77px;
   background-color: transparent;
@@ -106,21 +113,10 @@
   background-position: 0 0;
   background-size: contain;
   cursor: pointer;
-
-  @media (min-width: @tablet-width) {
-    top: 189px;
-    right: 284px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 190px;
-    right: 291px;
-  }
 }
 
 .show-process__description {
-  width: 193px;
-  margin: 0 auto;
+  display: grid;
 
   @media (min-width: @tablet-width) {
     width: unset;
@@ -132,17 +128,18 @@
 }
 
 .show-process__text {
-  margin: 0;
   color: #444444;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 41px;
+  margin: 0 0 41px;
+  padding: 0 29px 0 33px;
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
     padding: 0 39px;
     margin: 0 0 40px;
+    min-height: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -155,6 +152,8 @@
   font-size: 18px;
   line-height: 16px;
   padding: 16px 20px;
+  width: 75%;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 584px;
@@ -164,6 +163,7 @@
 
   @media (min-width: @desktop-width) {
     width: 230px;
+    margin: 0;
     margin-left: 23px;
   }
 }
@@ -171,16 +171,12 @@
 .show-process__play-btn:hover {
   width: 121px;
   height: 92px;
-  top: 182px;
-  right: 281px;
 }
 
 .show-process__play-btn:active {
   width: 81px;
   height: 62px;
   opacity: 0.3;
-  top: 197px;
-  right: 301px;
 }
 
 .show-process:hover {

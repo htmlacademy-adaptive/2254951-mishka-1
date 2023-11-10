@@ -136,13 +136,14 @@
   margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    width: 292px;
+    width: 44%;
     margin-bottom: 56px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 175px;
     margin-bottom: 109px;
+    width: 292px;
   }
 }
 
@@ -163,22 +164,28 @@
     width: 334px;
     height: 404px;
     top: 100px;
-    right: 0;
+    right: 50px;
   }
 
   @media (min-width: @desktop-width) {
     width: unset;
     height: 636px;
     top: -61px;
+    right: 0;
   }
 }
 
 .promo__order-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
-    width: 292px;
+    width: 44%;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 175px;
+    width: 292px;
   }
 }

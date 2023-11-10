@@ -43,8 +43,7 @@
     position: relative;
     background-color: transparent;
     display: flex;
-    width: 668px;
-    margin: 0 auto;
+    padding: 0 50px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -70,11 +69,13 @@
     padding: 0;
     border: none;
     order: 1;
+    width: 47%;
   }
 
   @media (min-width: @desktop-width) {
     order: 2;
     align-items: center;
+    width: unset;
   }
 }
 
@@ -112,8 +113,7 @@
   }
 }
 
-.main-nav__list--page,
-.main-nav--closed .main-nav__list--page {
+.main-nav__list--page {
   @media (min-width: @tablet-width) {
     order: 3;
     width: 335px;
@@ -127,8 +127,7 @@
   }
 }
 
-.main-nav__list--user,
-.main-nav--closed .main-nav__list--user {
+.main-nav__list--user {
   @media (min-width: @tablet-width) {
     order: 2;
     position: relative;
@@ -258,6 +257,10 @@
   box-sizing: border-box;
 }
 
+.main-nav__span {
+  color: #000000;
+}
+
 .main-nav__link--cart {
   @media (min-width: @tablet-width) {
     padding: 33px 0 31px 83px;
@@ -308,17 +311,16 @@
 .main-nav__link--cart:active svg {
   color: rgba(99, 209, 187, 0.3);
 }
-
-
+// toggle
 .main-nav__toggle {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: transparent;
   border: none;
   position: absolute;
-  right: 22px;
+  right: 31px;
   cursor: pointer;
-  top: 25px;
+  top: 28px;
   display: none;
   z-index: 20;
 }
@@ -331,6 +333,59 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle{
-  background-color: blue;
+.main-nav--closed .main-nav__toggle-item {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  right: 0;
+  top: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 20px;
+    background-color: #000000;
+    top: -6px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 20px;
+    background-color: #000000;
+    top: 6px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle-close {
+  display: none;
+}
+// close toggle
+.main-nav__toggle-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: -3px;
+}
+
+.main-nav__toggle-close:before,
+.main-nav__toggle-close:after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #000000;
+}
+
+.main-nav__toggle-close:before {
+  transform: rotate(45deg);
+}
+
+.main-nav__toggle-close:after {
+  transform: rotate(-45deg);
 }

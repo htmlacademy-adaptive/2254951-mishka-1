@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body>
     <header class="main-header main-header--index">
       <nav class="main-header__nav main-nav">
-        <button class="main-nav__toggle">
-          <span class="visually-hidden">Открыть-закрыть меню</span>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
+          <span class="main-nav__toggle-item"></span>
+          <span class="main-nav__toggle-close"></span>
         </button>
         <div class="main-nav__container">
           <div class="main-nav__logo">
@@ -160,8 +167,10 @@
               </svg>
             </button>
           </div>
-          <button class="reviews__btn button button--light" type="button">Написать</button>
-        </div>
+          <div class="reviews__btn-write">
+            <button class="reviews__btn button button--light" type="button">Написать</button>
+          </div>
+          </div>
       </section>
       <div class="contacts">
         <div class="contacts__block">
@@ -180,7 +189,10 @@
           </section>
           <section class="map">
             <span class="visually-hidden">Где мы находимся:</span>
-            <div class="map__wrapper"></div>
+            <div class="map__wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198025!2d30.3204724771085!3d59.938719162093825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694106958161!5m2!1sru!2sru" width="320" height="454" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </section>
         </div>
         <button class="contacts__btn button button--light" type="button">Напишите нам</button>

@@ -15,22 +15,15 @@
 }
 
 .product__img {
-  display: inherit;
-  height: 195px;
-
-  @media (min-width: @tablet-width) {
-    height: 334px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 462px;
-  }
+  display: block;
+  font-size: 0;
+  line-height: 0;
 }
 
 .product__wrapper {
   border: 1px solid #ececec;
   background: #FFF;
-  padding: 27px 27px 25px;
+  padding: 28px 27px 25px;
 
   @media (min-width: @tablet-width) {
     padding: 26px 32px 25px;
@@ -91,6 +84,7 @@
 
 .product__to-cart {
   padding-top: 24px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .product__price {
