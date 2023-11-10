@@ -1,3 +1,26 @@
+.form__description {
+  margin: 0;
+  color: #444444;
+  font-size: 13px;
+  line-height: 24px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 47px;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: unset;
+    margin: 0;
+    width: 702px;
+    padding-left: 175px;
+  }
+}
+
 .form__bg {
   @media (min-width: @tablet-width) {
     background: #f1f1f1;
@@ -33,7 +56,7 @@
 }
 
 .form__wrapper--name,
-.form__wrapper--contacts {
+.form__contacts-container{
   @media (min-width: @desktop-width) {
     padding-left: 111px;
   }
@@ -203,7 +226,7 @@
 }
 
 .form__input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   padding: 0;
@@ -309,7 +332,7 @@
 
 .form__message {
   padding: 15px 54px 87px 15px;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   margin: 22px 0 14px;
