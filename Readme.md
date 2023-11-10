@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Иляна Гаврилова](https://up.htmlacademy.ru/adaptive-individual/1/user/2254951).
-* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Наставник: [Виктория Никитина](https://up.htmlacademy.ru/profile/id1217273).
 
 ---
 
