@@ -12,6 +12,7 @@
 
 .main-nav__container {
   overflow: hidden;
+
   @media (min-width: @tablet-width) {
     position: relative;
     background-color: transparent;
@@ -259,6 +260,10 @@
 
 .main-nav__span {
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__link--cart {
@@ -279,12 +284,6 @@
   @media (min-width: @tablet-width) {
     top: 35px;
     left: 32px;
-  }
-}
-
-.main-nav__span {
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 // hover, active
@@ -373,19 +372,20 @@
   left: -3px;
 }
 
-.main-nav__toggle-close:before,
-.main-nav__toggle-close:after {
+.main-nav__toggle-close::before {
   content: "";
   position: absolute;
   width: 26px;
   height: 2px;
   background: #000000;
-}
-
-.main-nav__toggle-close:before {
   transform: rotate(45deg);
 }
 
-.main-nav__toggle-close:after {
+.main-nav__toggle-close::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #000000;
   transform: rotate(-45deg);
 }
