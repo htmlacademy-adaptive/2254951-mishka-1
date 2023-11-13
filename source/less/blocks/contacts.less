@@ -12,11 +12,6 @@
     margin: 0 auto;
     position: relative;
     padding-bottom: 105px;
-  }
-}
-
-.contacts__block {
-  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -70,11 +65,12 @@
   }
 }
 
-.contacts__wrapper {
+.contacts__list {
   gap: 30px;
   display: flex;
   flex-direction: column;
   margin-bottom: 63px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -92,7 +88,7 @@
   }
 }
 
-.contacts__container {
+.contacts__item {
   line-height: 30px;
   color: #444444;
   display: grid;

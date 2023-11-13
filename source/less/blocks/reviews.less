@@ -17,6 +17,8 @@
 
 .reviews__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__wrapper::after {
@@ -91,7 +93,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 175px;
+    margin-left: 174px;
   }
 }
 
@@ -127,6 +129,7 @@
   line-height: 20px;
   width: 260px;
   padding: 14px;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -135,6 +138,10 @@
     right: 50px;
     width: 175px;
     z-index: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
   }
 }
 
@@ -166,13 +173,11 @@
     gap: 37px;
     z-index: 5;
   }
-}
 
-.reviews__btn-write {
-  display: flex;
-  justify-content: center;
+  @media (min-width: @desktop-width) {
+    right: 19px;
+  }
 }
-
 // hover, active
 .reviews__btn-arrow:hover {
   opacity: 0.6;
