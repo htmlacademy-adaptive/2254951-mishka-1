@@ -1,0 +1,27 @@
+.header-form {
+  padding: 72px 30px 74px;
+  background-color: #f1f1f1;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    padding: 35px 30px 87px;
+    position: relative;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 38px 30px 103px;
+    margin-bottom: 62px;
+  }
+}
+
+.header-form::after {
+  @media (min-width: @tablet-width) {
+    .zigzag-light;
+  }
+}
+
+.header-form__title {
+  .header-title;
+  padding: 0;
+}

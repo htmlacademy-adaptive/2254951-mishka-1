@@ -1,0 +1,91 @@
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-underline {
+  text-decoration: none;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 12px 0 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.zigzag-light {
+  content: "";
+  position: absolute;
+  background: url("../img/zigzag-fill-t.svg") 0 0;
+  z-index: 1;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+  left: 0;
+
+  @media (min-width: @desktop-width) {
+    background-size: auto 36px;
+    background-position-x: 0;
+  }
+}
+
+.zigzag-dark {
+  content: "";
+  position: absolute;
+  background: url("../img/zigzag-line.svg") 0 0;
+  z-index: 1;
+  width: 100%;
+  height: 6px;
+  bottom: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    height: 17px;
+    background: url("../img/zigzag-line-t.svg") 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 23px;
+    background-size: auto 23px;
+    background-position-x: 2px;
+  }
+}
+
+.title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
+}

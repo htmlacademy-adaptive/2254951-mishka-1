@@ -1,0 +1,117 @@
+.about {
+  padding-top: 32px;
+  padding-bottom: 57px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 67px 0 61px;
+  }
+}
+
+.about__list {
+  .list-reset;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    padding-left: 175px;
+  }
+}
+
+.about__title {
+  .title;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 420px;
+    padding-left: 175px;
+  }
+}
+
+.about__item {
+  padding-top: 83px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    line-height: 22px;
+    padding-bottom: 28px;
+    width: 334px;
+  }
+}
+
+.about__item--eco::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-flower.svg");
+  width: 33px;
+  height: 38px;
+  top: 28px;
+  left: 8px;
+}
+
+.about__item--style::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-money.svg");
+  width: 47px;
+  height: 27px;
+  top: 29px;
+  left: 0;
+}
+
+.about__item--likes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-like.svg");
+  width: 34px;
+  height: 27px;
+  top: 34px;
+  left: 7px;
+}
+
+.about__item--handmade::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-clew.svg");
+  width: 35px;
+  height: 34px;
+  top: 31px;
+  left: 3px;
+}
+
+.about__item--native::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-rocket.svg");
+  width: 55px;
+  height: 23px;
+  top: 31px;
+  left: -6px;
+}
+
+.about__item--gift::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  width: 33px;
+  height: 32px;
+  top: 30px;
+  left: 3px;
+}
